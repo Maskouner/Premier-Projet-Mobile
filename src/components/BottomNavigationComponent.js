@@ -1,20 +1,33 @@
 import { BottomNavigation, Text, View } from 'react-native-paper'
 import React from 'react'
 import AcceuilScrenn from '../screnns/AcceuilScrenn'
+import SavoirFaireScrenn from '../screnns/SavoirFaireScrenn'
+import RealisationScrenn from '../screnns/RealisationScrenn'
 
 const AcceuilRoute = () => {
     return(
         <>
-        <Text>ACCEUIL</Text>
         <AcceuilScrenn/>
         </>  
     )  
 } 
 
 
-const SavoirFaireRoute = () => <Text>SAVOIR FAIRE</Text>
+const SavoirFaireRoute = () => {
+  return(
+      <>
+      <SavoirFaireScrenn/>
+      </>  
+  )  
+} 
 
-const RealisationsRoute = () => <Text>REALISATIONS</Text>
+const RealisationsRoute = () => {
+  return(
+      <>
+      <RealisationScrenn/>
+      </>  
+  )  
+} 
 
 const ContactRoute = () => <Text>CONTACT</Text>
 

@@ -12,7 +12,7 @@ const AcceuilScrenn = () => {
         <Image style={styles.image} source={require('../../assets/liege_rouleau_720x.jpg')}/>
         
         <Text style={styles.paragraphe}>
-            Sur cette application nous vous proposons de voir une presentation de notre entreprise et de nos different produits
+            Sur cette application nous vous proposons aussi de voir une presentation de notre entreprise et de nos different produits
             réalisées en liège
         </Text>
     </View>
@@ -29,6 +29,8 @@ const styles = StyleSheet.create({
         fontSize: 30,
         fontWeight: 'bold',
         textAlign: 'center',
+        marginTop: 20,
+        marginBottom: 10
     },
     paragraphe: {
         fontSize:20,
