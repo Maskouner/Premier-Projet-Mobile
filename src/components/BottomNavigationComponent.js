@@ -4,6 +4,7 @@ import AcceuilScrenn from '../screnns/AcceuilScrenn'
 import SavoirFaireScrenn from '../screnns/SavoirFaireScrenn'
 import RealisationScrenn from '../screnns/RealisationScrenn'
 import StackNavigation from '../navigation/StackNavigation'
+import ContactScrenn from '../screnns/ContactScrenn'
 
 const AcceuilRoute = () => {
     return(
@@ -30,7 +31,13 @@ const RealisationsRoute = () => {
   )  
 } 
 
-const ContactRoute = () => <Text>CONTACT</Text>
+const ContactRoute = () => {
+  return(
+      <>
+      <ContactScrenn/>
+      </>  
+  )  
+} 
 
 const BottomNavigationComponent = () => {
     const [index, setIndex] = React.useState(0);

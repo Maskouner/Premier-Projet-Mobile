@@ -11,7 +11,7 @@ const StackNavigation = () => {
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen options={{headerShown:false}} name="Réalisations" component={RealisationScrenn} />
-                <Stack.Screen options={{headerShown:false}} name="RéalisationsDetails" component={RealisationDetailScrenn} />
+                <Stack.Screen options={{headerShown:false}} name="RéalisationsDetails" component={RealisationDetailScrenn}/>
             </Stack.Navigator>
         </NavigationContainer>
     )
