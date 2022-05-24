@@ -1,13 +1,17 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
+import { useNavigation } from '@react-navigation/core'
 import React from 'react'
 
 const RealisationScrenn = () => {
+    const navigation= useNavigation()
   return (
       <View style={styles.container}>
           <Text style={styles.titre}> NOS REALISATIONS</Text>
           <View style={styles.viewprincipale}>
               <View style={styles.viewsecondaire}>
+                  <TouchableOpacity onPress={()=> navigation.navigate("RéalisationsDetails")}>
                   <Image style={styles.image} source={require('../../assets/PorteFeuille.jpg')} />
+                  </TouchableOpacity>
                   <Text style={styles.texte}> Porte Feuille</Text>
               </View>
               <View style={styles.viewsecondaire}>

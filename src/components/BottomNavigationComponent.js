@@ -3,6 +3,7 @@ import React from 'react'
 import AcceuilScrenn from '../screnns/AcceuilScrenn'
 import SavoirFaireScrenn from '../screnns/SavoirFaireScrenn'
 import RealisationScrenn from '../screnns/RealisationScrenn'
+import StackNavigation from '../navigation/StackNavigation'
 
 const AcceuilRoute = () => {
     return(
@@ -24,7 +25,7 @@ const SavoirFaireRoute = () => {
 const RealisationsRoute = () => {
   return(
       <>
-      <RealisationScrenn/>
+      <StackNavigation/>
       </>  
   )  
 } 
